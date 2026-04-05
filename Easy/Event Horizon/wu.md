@@ -203,7 +203,23 @@ Since we are given the `Logs` folder, we can use `chainsaw` - a powerful tool to
 # ....
 ```
 
-We get the flag just like that.
+We get the flag just like that. However with that we could't learn anything. So I open the `evtx` using Event Viewer:
+
+![](2026-04-06_02-51.png)
+
+We can see that the attacker tries to run a `.ps1` file downloaded from a gist url, and the file contains function `Invoke-Mimikatz` which is a legendary tool to extract the hash, password, ... directly from memory - `lsass.exe` process. However the windows antivirus software had detected and blocked this. **Note:** If you look close enough, the name of the `ps1` script is a base64 string, decode it will also give you the same flag we found
+
+Analyzing the log we can see more efforts of the attacker to download Mimikatz, but it all didn't work.
+
+Scrolling down the log little more, we can see alot of `warning` level event. Tracing back to the first of the sequence, we can see the script:
+
+![](2026-04-06_03-04.png)
+
+The script mentions about `PowerUp`, which is a tool used for `Privilege Escalation` in Windows. Hacker often utilizes it to find the misconfigurations to access admin, system role.
+
+At the same event we find the flag as well.
+
+So we can imagine the attack chain of attackers: Phising mentioned in the description -> Using PowerUp to escalate privilege -> Trying to dump the CEO's credential by using Mimikatz but fail -> Delete the main PowerShell log but forget about `Microsoft-Windows-PowerShell%4Operational`
 
 ## 3. Solution ##
 1. **Result:** The flag is `HTB{8Lu3_734m_F0r3v3R}`
