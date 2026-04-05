@@ -77,7 +77,7 @@ So the answer is: `powershell.exe`
     ``` 
     ![](2026-04-06_00-33.png)
 
-    * Decode the base64 strings we got a `URL`: `https://sheets.googleapis.com/v4/spreadsheets/1HpB4GqqYwI6X71z4p2EK88FoJjrsW2DKbSkx-ro5lQQ?key=AIzaSyDUpjSf7R1l1dQohA5Qv9EdyWA3KBOMc0U&ranges=Sheet1!O37&includeGridData=true`
+    * Decode the base64 strings we got a `URL`: `https://sheets.googleapis.com/v4/spreadsheets/1HpB4GqqYwI6X71z4p2EK88FoJjrsW2DKbSkx-ro5lQQ?key=AIzaSyDUpjSf7R1l1dQohA5Qv9EdyWA3KB...&ranges=Sheet1!O37&includeGridData=true`
     * We can identify the Spreadsheet ID is `1HpB4GqqYwI6X71z4p2EK88FoJjrsW2DKbSkx-ro5lQQ`
 So the answer is: `1HpB4GqqYwI6X71z4p2EK88FoJjrsW2DKbSkx-ro5lQQ`
 
