@@ -797,7 +797,7 @@ Vậy đáp án cho câu hỏi là: `s1rx:S1rx_vzNDP79yv`
   </tbody>
 </table>
 
-### 4. Chuỗi tấn công ###
+### 4. Attack chain ###
 
 ```mermaid
 flowchart LR
@@ -881,7 +881,7 @@ flowchart LR
     P3 -->|WMI và RDP| P4
 ```
 
-### 5. Ánh xạ MITRE ATT&CK ###
+### 5. MITRE ATT&CK Mapping ###
 
 | Tactic<br><small>Chiến thuật</small> | Technique<br><small>Kỹ thuật</small> | ID | Bằng chứng điều tra |
 |---|---|:---:|---|
